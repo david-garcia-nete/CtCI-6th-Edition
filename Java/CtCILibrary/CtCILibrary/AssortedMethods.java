@@ -7,7 +7,11 @@ public class AssortedMethods {
 	public static int randomInt(int n) {
 		return (int) (Math.random() * n);
 	}
-
+//This method takes a min and a max and calculates a multiplier.
+//The multiplier is passed to randomInt().  
+//There it will be multiplied with the pseudorandom uniform distribution ie [0,1]
+//The multiplier is max + 1 - min.
+//
 	public static int randomIntInRange(int min, int max) {
 		return randomInt(max + 1 - min) + min;
 	}
