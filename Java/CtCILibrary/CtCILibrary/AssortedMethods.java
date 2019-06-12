@@ -11,7 +11,9 @@ public class AssortedMethods {
 //The multiplier is passed to randomInt().  
 //There it will be multiplied with the pseudorandom uniform distribution ie [0,1]
 //The multiplier is max + 1 - min.
-//
+//This makes sense because the multiplier represents a range.
+//We actually add min back to the result of randomInt()
+//This will raise the number back to it’s place in the number line.
 	public static int randomIntInRange(int min, int max) {
 		return randomInt(max + 1 - min) + min;
 	}
