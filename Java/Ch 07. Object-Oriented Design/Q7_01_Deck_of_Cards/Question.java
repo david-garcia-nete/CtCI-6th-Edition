@@ -47,4 +47,4 @@ public class Question {
 
 }
 //I'm assuming the outputs are different each time this program is run because the pseudorandom seed is determined by the time. 
-// This way the period starts in a different place each time we test.
+// This way the period starts in a different place each time we test.  For testing there is a funtion to set the seed if we want.
