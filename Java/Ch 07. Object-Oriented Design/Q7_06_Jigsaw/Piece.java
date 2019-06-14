@@ -38,7 +38,7 @@ public class Piece {
 		HashMap<Orientation, Edge> rotated = new HashMap<Orientation, Edge>();
 		
 		numberRotations = numberRotations % NUMBER_OF_EDGES;
-		if (numberRotations < 0) numberRotations += NUMBER_OF_EDGES;
+		if (numberRotations < 0) numberRotations += NUMBER_OF_EDGES;  // can be roated both ways
 		
 		for (int i = 0; i < orientations.length; i++) {
 			Orientation oldOrientation = orientations[(i - numberRotations + NUMBER_OF_EDGES) % NUMBER_OF_EDGES];//circular
