@@ -41,7 +41,7 @@ public class Piece {
 		if (numberRotations < 0) numberRotations += NUMBER_OF_EDGES;
 		
 		for (int i = 0; i < orientations.length; i++) {
-			Orientation oldOrientation = orientations[(i - numberRotations + NUMBER_OF_EDGES) % NUMBER_OF_EDGES];
+			Orientation oldOrientation = orientations[(i - numberRotations + NUMBER_OF_EDGES) % NUMBER_OF_EDGES];//circular
 			Orientation newOrientation = orientations[i];
 			rotated.put(newOrientation, edges.get(oldOrientation));
 		}		
