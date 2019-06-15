@@ -38,7 +38,7 @@ public class Automator {
 			Location other = remainingMoves.get(t);
 			Location current = remainingMoves.get(i);
 			remainingMoves.set(t, current);
-			remainingMoves.set(i, other);
+			remainingMoves.set(i, other); //It looks like remainingMoves is to place pieces in random locations.
 		}
 	}
 	
