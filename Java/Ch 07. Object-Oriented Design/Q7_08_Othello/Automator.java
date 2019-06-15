@@ -75,7 +75,7 @@ public class Automator {
 		return false;
 	}	
 	
-	public boolean isOver() {
+	public boolean isOver() {// I thought the game was over when no more moves can be made.  I suppose this is another indicator?
 		if (players[0].getScore() == 0 || players[1].getScore() == 0) {
 			return true;
 		}
