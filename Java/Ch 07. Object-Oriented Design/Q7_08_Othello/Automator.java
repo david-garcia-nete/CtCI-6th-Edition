@@ -58,7 +58,7 @@ public class Automator {
 	public boolean playRandom() {
 		Board board = Game.getInstance().getBoard();
 		shuffle();
-		lastPlayer = lastPlayer == players[0] ? players[1] : players[0];
+		lastPlayer = lastPlayer == players[0] ? players[1] : players[0];//Not sure what's going on here.  Do we shuffle the moves at each turn?  Why?  
 		String color = lastPlayer.getColor().toString();
 		for (int i = 0; i < remainingMoves.size(); i++) {
 			Location loc = remainingMoves.get(i);
