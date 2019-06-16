@@ -42,7 +42,7 @@ public class Automator {
 		}
 	}
 	
-	public void removeLocation(int r, int c) {
+	public void removeLocation(int r, int c) {//This function is not even used.  Good design though.
 		for (int i = 0; i < remainingMoves.size(); i++) {
 			Location loc = remainingMoves.get(i);
 			if (loc.isSameAs(r, c)) {
