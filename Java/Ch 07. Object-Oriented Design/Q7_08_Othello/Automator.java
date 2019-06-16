@@ -57,8 +57,8 @@ public class Automator {
 	
 	public boolean playRandom() {
 		Board board = Game.getInstance().getBoard();
-		shuffle();
-		lastPlayer = lastPlayer == players[0] ? players[1] : players[0];//Not sure what's going on here.  Do we shuffle the moves at each turn?  Why? The lastPlayer variable is actually inicialized to player[1]. 
+		shuffle(); //  It looks like the suffle at each turn is to keep the moves very random.  
+hat's going on here.  Do we shuffle the moves at each turn?  Why? The lastPlayer variable is actually inicialized to player[1]. 		lastPlayer = lastPlayer == players[0] ? players[1] : players[0];//Not sure w
 		String color = lastPlayer.getColor().toString();
 		for (int i = 0; i < remainingMoves.size(); i++) {
 			Location loc = remainingMoves.get(i);
