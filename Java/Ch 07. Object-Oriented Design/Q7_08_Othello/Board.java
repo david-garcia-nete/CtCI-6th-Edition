@@ -29,7 +29,7 @@ public class Board {
 			return false;
 		}
 		
-		/* attempt to flip each of the four directions */
+		/* attempt to flip each of the four directions */  //What about the diagonal directions.  
 		int[] results = new int[4];
 		results[0] = flipSection(row - 1, column, color, Direction.up);
 		results[1] = flipSection(row + 1, column, color, Direction.down);
