@@ -98,7 +98,7 @@ public class Others {
 		int count = 0;
 		for (int i = 0; i < expression.length(); i++) {
 			if (isOperator(expression.charAt(i))) {
-				if (count == ind) {
+				if (count == ind) {  //what is this? the first operator
 					index = i;
 				}
 				count++;
