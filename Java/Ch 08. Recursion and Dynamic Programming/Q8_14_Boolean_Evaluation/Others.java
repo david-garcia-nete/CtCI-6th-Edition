@@ -107,7 +107,7 @@ public class Others {
 			}
 		}
 		count = 0;
-		for (int i = index - 1; i >= 0; i--) {
+		for (int i = index - 1; i >= 0; i--) {//what is this.  it looks like it's seeing where parens have already been placed
 			if (expression.charAt(i) == ')') {
 				count++;
 			} else if (expression.charAt(i) == '(') {
