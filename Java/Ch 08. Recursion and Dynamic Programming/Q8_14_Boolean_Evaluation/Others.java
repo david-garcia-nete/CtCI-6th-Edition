@@ -139,7 +139,7 @@ public class Others {
 		
 	}
 	
-	public static int bruteForce(String expression, HashMap<String, Boolean> completed, boolean result, boolean[] flags) {
+	public static int bruteForce(String expression, HashMap<String, Boolean> completed, boolean result, boolean[] flags)//I like how the flags are passed in {
 		int count = 0;
 		boolean isDone = true;
 		if (completed.containsKey(expression)) {
