@@ -147,7 +147,7 @@ public class Others {
 		}
 		
 		for (int i = 0; i < flags.length; i++) {
-			if (!flags[i]) {
+			if (!flags[i]) { // I like how the flags tell us where to put the parens
 				flags[i] = true;
 				String newexpression = insertParensAround(expression, i);
 				isDone = false;
