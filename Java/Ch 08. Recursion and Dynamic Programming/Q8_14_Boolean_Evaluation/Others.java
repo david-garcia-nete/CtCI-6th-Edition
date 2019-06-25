@@ -79,7 +79,9 @@ public class Others {
 			return true;
 		}
 	}
-	
+	/*I dont feel the need to set breakpoints in help functions.  when you start whiteboard coding
+	you might even want to do white board debugging.  set whiteboard breakpoints at the most important
+	parts of the code.*/
 	public static boolean isOperator(char c) {
 		switch (c) {
 		case '&':
